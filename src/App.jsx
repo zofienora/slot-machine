@@ -1,10 +1,11 @@
 import './App.css'
+import Machine from './components/Machine';
 
 function App() {
 
   return (
     <>
-   
+      <Machine />
     </>
   )
 }
