@@ -6,7 +6,7 @@ function Machine() {
     const [slots, setSlots] = useState(["❔"]);
 
     const spin = () => {
-    const newSlots = Array.from({ length: 1 }, () => {
+    const newSlots = Array.from({ length: 3 }, () => {
     const index = Math.floor(Math.random() * EMOJIS.length);
     return EMOJIS[index];
     });
@@ -16,15 +16,11 @@ function Machine() {
     return (
         <>
             <div className="container">
-                <div className="slot-container">
-                    <p className="fruit">{slots}</p>
+                {slots.map((emoji, index) => (
+                <div className="slot-container" key={index}>
+                    <p className="fruit">{emoji}</p>
                 </div>
-                <div className="slot-container">
-                    <p className="fruit">{slots}</p>
-                </div>
-                <div className="slot-container">
-                    <p className="fruit">{slots}</p>
-                </div>
+                ))}
             </div>
 
             <div className="container">
