@@ -1,20 +1,21 @@
-
+import React, { useState } from "react";
 
 
 function Machine() {
     const EMOJIS = ["🍒", "🍋", "🍇", "🍊", "🔔", "⭐"];
+    const [slots, setSlots] = useState(["❔", "❔", "❔"]);
 
     return (
         <>
             <div className="container">
                 <div className="slot-container">
-                    <p className="fruit"></p>
+                    <p className="fruit">{slots}</p>
                 </div>
                 <div className="slot-container">
-                    <p className="fruit"></p>
+                    <p className="fruit">{slots}</p>
                 </div>
                 <div className="slot-container">
-                    <p className="fruit"></p>
+                    <p className="fruit">{slots}</p>
                 </div>
             </div>
 
