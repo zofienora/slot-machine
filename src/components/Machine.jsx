@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 function Machine() {
-    const EMOJIS = ["🍒", "🍋", "🍇", "🍊", "🔔", "⭐"];
+    const EMOJIS = ["🍒", "🍇", "🍊", "⭐"];
     const [slots, setSlots] = useState(["❔"]);
 
     const spin = () => {
@@ -26,13 +26,7 @@ function Machine() {
             <div className="container">
                 <button className="spin-button" onClick={spin} >Spin</button>
             </div>
-
         </>
-
-
-
-
-
   );
 }
 
