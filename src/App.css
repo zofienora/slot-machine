@@ -4,11 +4,20 @@
 }
 
 .slot-container {
-  background: rgb(231, 221, 118);
+  background: rgb(211, 88, 6);
   border-radius: 8px;
   width: 100px;
   height: 100px;
   box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.fruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .spin-button {
