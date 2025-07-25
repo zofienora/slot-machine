@@ -29,7 +29,7 @@ function Machine() {
             </div>
 
             <div className="container">
-                <button className="spin-button" onClick={spin} >Spin</button> // the spin button calls the spin function when clicked
+                <button className="spin-button" onClick={spin} >Spin</button> 
             </div>
         </>
   );
